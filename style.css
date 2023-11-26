@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    width: 1100;
+    justify-content: space-between;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+}
+img{
+    transition: 0.5s;
+    box-shadow: 0px 0px 8px grey;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(20deg);
+    max-width: 350px;
+}
+.cards:hover img{
+    opacity: 0.3;
+}
+.cards img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
